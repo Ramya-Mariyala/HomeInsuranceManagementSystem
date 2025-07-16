@@ -1,0 +1,90 @@
+<div class="col-md-6 col-md-offset-2">
+    <h3>Property Details</h3>
+    <br/>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+  
+      <div class="form-group">
+        <label for="propertyId">Property ID</label>
+        <input formControlName="propertyId" placeholder="Property Id" name="propertyId" class="form-control" id="propertyId">
+        <div *ngIf="submitted && addForm.controls.propertyId.errors" class="error">
+            <div class="text-danger" *ngIf="addForm.controls.propertyId.errors.required">Property ID is Required</div>
+          </div>
+      </div>
+      <div class="form-group">
+        <label for="marketValue">Market Value:</label>
+        <input formControlName="marketValue" placeholder="Market Value" name="marketValue" class="form-control" id="marketValue">
+        <div *ngIf="submitted && addForm.controls.marketValue.errors" class="error">
+            <div class="text-danger" *ngIf="addForm.controls.marketValue.errors.required">Market Value is Required</div>
+          </div>
+      </div>
+  
+      <div class="form-group">
+        <label for="yearBuilt">Year Built:</label>
+        <input  formControlName="yearBuilt" placeholder="Year Built" name="yearBuilt" class="form-control" id="yearBuilt">
+        <div *ngIf="submitted && addForm.controls.yearBuilt.errors" class="error">
+            <div class="text-danger" *ngIf="addForm.controls.yearBuilt.errors.required"> Year Built is Required</div>
+          </div>
+      </div>
+      <div class="form-group">
+          <label for="squareFootage">Square Footage</label>
+          <input formControlName="squareFootage" placeholder="Square Footage" name="squareFootage" class="form-control" id="squareFootage">
+          <div *ngIf="submitted && addForm.controls.squareFootage.errors" class="error">
+              <div class="text-danger" *ngIf="addForm.controls.squareFootage.errors.required">Square Footage is Required</div>
+            </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="dwellingStyle">Dwelling Style<Style></Style>:</label>
+          <input formControlName="dwellingStyle" placeholder="Dwelling style" name="dwellingStyle" class="form-control" id="dwellingStyle">
+          <div *ngIf="submitted && addForm.controls.dwellingStyle.errors" class="error">
+              <div class="text-danger" *ngIf="addForm.controls.dwellingStyle.errors.required">Dwelling Style is Required</div>
+            </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="roofMaterial">Roof Material</label>
+          <input formControlName="roofMaterial" placeholder="Roof Material" name="roofMaterial" class="form-control" id="roofMaterial">
+          <div *ngIf="submitted && addForm.controls.roofMaterial.errors" class="error">
+              <div class="text-danger" *ngIf="addForm.controls.roofMaterial.errors.required">Roof Material is Required</div>
+            </div>
+        </div>
+  
+        <div class="form-group">
+          <label for="garageType">Garage Type:</label>
+          <input formControlName="garageType" placeholder="Garage Type" name="garageType" class="form-control" id="garageType">
+          <div *ngIf="submitted && addForm.controls.garageType.errors" class="error">
+              <div class="text-danger" *ngIf="addForm.controls.garageType.errors.required"> Garage Type is Required</div>
+            </div>
+        </div>
+       
+          <div class="form-group">
+            <label for="fullBathCount">FullBath Count:</label>
+            <input type="number" formControlName="fullBathCount" placeholder="FullBath Count" name="fullBathCount" class="form-control" id="fullBathCount">
+            <div *ngIf="submitted && addForm.controls.fullBathCount.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.fullBathCount.errors.required">FullBath Count is Required</div>
+              </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="halfBathCount">HalfBath Count:</label>
+            <input type="number" formControlName="halfBathCount" placeholder="HalfBath Count" name="halfBathCount" class="form-control" id="halfBathCount">
+            <div *ngIf="submitted && addForm.controls.halfBathCount.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.halfBathCount.errors.required">FullBath Count is Required</div>
+              </div>
+          </div>
+  
+          <div class="form-group">
+            <label for="hasSwimmingPool">Has SwimmingPool:</label>
+            <input formControlName="hasSwimmingPool" placeholder="Has SwimmingPool" name="hasSwimmingPool" class="form-control" id="hasSwimmingPool">
+            <div *ngIf="submitted && addForm.controls.hasSwimmingPool.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.hasSwimmingPool.errors.required">Has SwimmingPool Field is Required</div>
+              </div>
+          </div>
+  
+      <button class="btn btn-success">Save</button>&nbsp; &nbsp;
+      <button class="btn btn-danger" type="reset">Cancel</button>
+  &nbsp; &nbsp;
+  <a class="btn btn-warning" href="/list-property">Back to List</a> 
+      <br/><br/>
+    </form>
+  </div>

@@ -1,0 +1,98 @@
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+    <h2>Edit Quote &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h2>
+    <br />
+    <form [formGroup]="editForm" (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label for="quoteId">Quote Id:</label>
+            <input formControlName="quoteId" placeholder="Quote Id" name="quoteId" class="form-control" id="quoteId">
+            <div *ngIf="submitted && editForm.controls.quoteId.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.quoteId.errors.required">Quote Id is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="premiumType">Premium Type:</label>
+            <input formControlName="premiumType" placeholder="Premium Type" name="premiumType" class="form-control"
+                id="premiumType">
+            <div *ngIf="submitted && editForm.controls.premiumType.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.premiumType.errors.required">Premium Type is required
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="premium">Premium :</label>
+            <input formControlName="premium" placeholder="Premium" name="premium" class="form-control" id="premium">
+            <div *ngIf="submitted && editForm.controls.premium.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.premium.errors.required">Premium is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="dwellingCoverage">Dwelling Coverage:</label>
+            <input formControlName="dwellingCoverage" placeholder="Dwelling Coverage" name="dwellingCoverage"
+                class="form-control" id="dwellingCoverage">
+            <div *ngIf="submitted && editForm.controls.dwellingCoverage.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.dwellingCoverage.errors.required">Dwelling Coverage is
+                    required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="detachedStructureCoverage">Detached Structure coverage:</label>
+            <input formControlName="detachedStructureCoverage" placeholder="Detached Structure coverage"
+                name="detachedStructureCoverage" class="form-control" id="detachedStructureCoverage">
+            <div *ngIf="submitted && editForm.controls.detachedStructureCoverage.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.detachedStructureCoverage.errors.required">Detached
+                    Structure coverage is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="personalPropertyCoverage">Personal Property Coverage:</label>
+            <input formControlName="personalPropertyCoverage" placeholder="Personal Property Coverage"
+                name="personalPropertyCoverage" class="form-control" id="personalPropertyCoverage">
+            <div *ngIf="submitted && editForm.controls.personalPropertyCoverage.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.personalPropertyCoverage.errors.required">Personal
+                    Property Coverage is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="additionalLivingExpense">Additional Living Expense:</label>
+            <input formControlName="additionalLivingExpense" placeholder="Additional Living Expense"
+                name="additionalLivingExpense" class="form-control" id="additionalLivingExpense">
+            <div *ngIf="submitted && editForm.controls.additionalLivingExpense.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.additionalLivingExpense.errors.required">Additional
+                    Living Expense is required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="medicalExpense">Medical Expense:</label>
+            <input formControlName="medicalExpense" placeholder="Medical Expense" name="medicalExpense"
+                class="form-control" id="medicalExpense">
+            <div *ngIf="submitted && editForm.controls.medicalExpense.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.medicalExpense.errors.required">Medical Expense is
+                    required</div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="deductableAmount">Deductable Amount:</label>
+            <input formControlName="deductableAmount" placeholder="Deductable Amount" name="deductableAmount"
+                class="form-control" id="deductableAmount">
+            <div *ngIf="submitted && editForm.controls.deductableAmount.errors" class="error">
+                <div class="text-danger" *ngIf="editForm.controls.deductableAmount.errors.required">Deductable Amount is
+                    required</div>
+            </div>
+        </div>
+
+        <button class="btn btn-success">Update</button>&nbsp; &nbsp;
+        <a class="btn btn-danger" href="/list-quote">Cancel</a>&nbsp; &nbsp;
+        <a class="btn btn-warning" href="/list-quote">Back to List</a>
+        <br /><br />
+    </form>
+</div>

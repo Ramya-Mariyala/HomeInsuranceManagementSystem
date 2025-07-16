@@ -1,0 +1,42 @@
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+    <h2>Add User</h2>
+    <br />
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+ 
+        <div class="form-group">
+            <label for="userName"><b>User Name:</b></label>
+            <input formControlName="userName" placeholder="Enter User Name" name="userName" class="form-control"
+                id="userName">
+            <div *ngIf="submitted && addForm.controls.userName.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.userName.errors.required">User Name is required</div>
+            </div>
+        </div>
+ 
+        <div class="form-group">
+            <label for="password"><b>Password:</b></label>
+            <input formControlName="password" placeholder="Enter Password" name="password" class="form-control"
+                id="password">
+            <div *ngIf="submitted && addForm.controls.password.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.password.errors.required">Password is required</div>
+            </div>
+        </div>
+ 
+        <div class="form-group">
+            <label for="role"><b>Role:</b></label>
+            <br>
+            <input type="radio" formControlName="role" id="Agent" value="Agent" /> Agent <br>
+ 
+            <input type="radio" formControlName="role" id="Policyholder" value="Policyholder" /> Policy holder <br>
+ 
+            <div *ngIf="submitted && addForm.controls.role.errors" class="error">
+                <div class="text-danger" *ngIf="addForm.controls.role.errors.required">Role is required</div>
+            </div>
+        </div>
+ 
+        <button class="btn btn-success"><b>Save</b></button>&nbsp; &nbsp;
+        <button class="btn btn-danger" type="reset" (click)="cancel()"><b>Cancel</b></button>
+ 
+        <br /><br />
+    </form>
+</div>

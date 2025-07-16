@@ -1,0 +1,67 @@
+<div class="col-md-6 col-md-offset-2">
+    <h3>Property Details</h3>
+    <br />
+    <form [formGroup]="propertyForm">
+
+        <div class="form-group">
+            <label for="propertyId">Property ID</label>
+            <input formControlName="propertyId" placeholder="Property Id" name="propertyId" class="form-control"
+                id="propertyId">
+        </div>
+        <div class="form-group">
+            <label for="marketValue">Market Value:</label>
+            <input formControlName="marketValue" placeholder="Market Value" name="marketValue" class="form-control"
+                id="marketValue">
+        </div>
+
+        <div class="form-group">
+            <label for="yearBuilt">Year Built:</label>
+            <input formControlName="yearBuilt" placeholder="Year Built" name="yearBuilt"
+                class="form-control" id="yearBuilt">
+        </div>
+        <div class="form-group">
+            <label for="squareFootage">Square Footage</label>
+            <input formControlName="squareFootage" placeholder="Square Footage" name="squareFootage"
+                class="form-control" id="squareFootage">
+        </div>
+
+        <div class="form-group">
+            <label for="dwellingStyle">Dwelling Style<Style></Style>:</label>
+            <input formControlName="dwellingStyle" placeholder="Dwelling style" name="dwellingStyle"
+                class="form-control" id="dwellingStyle">
+        </div>
+
+        <div class="form-group">
+            <label for="roofMaterial">Roof Material</label>
+            <input formControlName="roofMaterial" placeholder="Roof Material" name="roofMaterial" class="form-control"
+                id="roofMaterial">
+        </div>
+
+        <div class="form-group">
+            <label for="garageType">Garage Type:</label>
+            <input formControlName="garageType" placeholder="Garage Type" name="garageType" class="form-control"
+                id="garageType">
+        </div>
+
+        <div class="form-group">
+            <label for="fullBathCount">FullBath Count:</label>
+            <input type="number" formControlName="fullBathCount" placeholder="FullBath Count" name="fullBathCount"
+                class="form-control" id="fullBathCount">
+        </div>
+
+        <div class="form-group">
+            <label for="halfBathCount">HalfBath Count:</label>
+            <input type="number" formControlName="halfBathCount" placeholder="HalfBath Count" name="halfBathCount"
+                class="form-control" id="halfBathCount">
+        </div>
+
+        <div class="form-group">
+            <label for="hasSwimmingPool">Has SwimmingPool:</label>
+            <input formControlName="hasSwimmingPool" placeholder="Has SwimmingPool" name="hasSwimmingPool"
+                class="form-control" id="hasSwimmingPool">
+        </div>
+
+        <a class="btn btn-warning" href="policyholder">Back to Home</a>
+        <br /><br />
+    </form>
+</div>

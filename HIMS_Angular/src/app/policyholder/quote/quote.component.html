@@ -1,0 +1,63 @@
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+    <h2>Quote &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </h2>
+    <br />
+    <form [formGroup]="quoteForm">
+
+        <div class="form-group">
+            <label for="quoteId">Quote Id:</label>
+            <input formControlName="quoteId" placeholder="Quote Id" name="quoteId" class="form-control" id="quoteId">
+        </div>
+
+        <div class="form-group">
+            <label for="premiumType">Premium Type:</label>
+            <input formControlName="premiumType" placeholder="Premium Type" name="premiumType" class="form-control"
+                id="premiumType">
+        </div>
+
+        <div class="form-group">
+            <label for="premium">Premium :</label>
+            <input formControlName="premium" placeholder="Premium" name="premium" class="form-control" id="premium">
+        </div>
+
+        <div class="form-group">
+            <label for="dwellingCoverage">Dwelling Coverage:</label>
+            <input formControlName="dwellingCoverage" placeholder="Dwelling Coverage" name="dwellingCoverage"
+                class="form-control" id="dwellingCoverage">
+        </div>
+
+        <div class="form-group">
+            <label for="detachedStructureCoverage">Detached Structure coverage:</label>
+            <input formControlName="detachedStructureCoverage" placeholder="Detached Structure coverage"
+                name="detachedStructureCoverage" class="form-control" id="detachedStructureCoverage">
+        </div>
+
+        <div class="form-group">
+            <label for="personalPropertyCoverage">Personal Property Coverage:</label>
+            <input formControlName="personalPropertyCoverage" placeholder="Personal Property Coverage"
+                name="personalPropertyCoverage" class="form-control" id="personalPropertyCoverage">
+        </div>
+
+        <div class="form-group">
+            <label for="additionalLivingExpense">Additional Living Expense:</label>
+            <input formControlName="additionalLivingExpense" placeholder="Additional Living Expense"
+                name="additionalLivingExpense" class="form-control" id="additionalLivingExpense">
+        </div>
+
+        <div class="form-group">
+            <label for="medicalExpense">Medical Expense:</label>
+            <input formControlName="medicalExpense" placeholder="Medical Expense" name="medicalExpense"
+                class="form-control" id="medicalExpense">
+        </div>
+
+        <div class="form-group">
+            <label for="deductableAmount">Deductable Amount:</label>
+            <input formControlName="deductableAmount" placeholder="Deductable Amount" name="deductableAmount"
+                class="form-control" id="deductableAmount">
+        </div>
+
+        <a class="btn btn-info" href="property">Property</a>&nbsp;&nbsp;
+        <a class="btn btn-danger" href="policyholder">Cancel</a>
+        <br /><br />
+    </form>
+</div>

@@ -1,0 +1,43 @@
+<br /><br />
+<div class="col-lg-16">
+    <h2> Policy Details</h2>
+    <br />
+    <a class="btn btn-warning" href="admin">Back </a> &nbsp;&nbsp;
+    <a class="btn btn-danger" href="home-agent">Cancel </a>
+
+    <br /><br />
+    <table class="table table-striped table-responsive table-hover"
+        style="background-color:snow; width: auto; height: auto;">
+        <thead>
+            <tr>
+                <th class="text-hide">Id</th>
+                <th>policyId</th>
+                <th>policyEffectiveDate</th>
+                <th>policyEndDate</th>
+                <th>policyTerm</th>
+                <th>policyStatus</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let policy of policies">
+                <td class="text-hide">
+                <td>{{policy.policyId}}</td>
+                <td>{{policy.policyEffectiveDate }}</td>
+                <td>{{policy.policyEndDate }}</td>
+                <td>{{policy.policyTerm }}</td>
+                <td>{{policy.policyStatus }}</td>
+                <td><button class="btn btn-danger" (click)="deletePolicy(policy)"> Delete</button>
+                    <hr>
+                    <button class="btn btn-warning" (click)="editPolicy(policy)" style="margin-left: 10px;">
+                        Edit</button>
+                </td>
+            </tr>
+            <tr *ngIf="!policies || policies.length==0">
+                <th colspan="7">
+                    <p class="text-right text-danger">Sorry No PoliciesAvailable</p>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+</div>

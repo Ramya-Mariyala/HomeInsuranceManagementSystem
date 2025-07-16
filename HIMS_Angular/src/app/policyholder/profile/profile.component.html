@@ -1,0 +1,121 @@
+<br/><br/>
+<div class="col-md-6 col-md-offset-2">
+  <h2>Profile        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                     
+  </h2>
+  <br/>
+  <form [formGroup]="profileForm" (ngSubmit)="editPolicyHolderData()">
+    
+    <div class="form-group">
+      <label for="policyHolderId">Policy Holder Id:</label>
+      <input formControlName="policyHolderId" placeholder="Policy Holder Id" name="policyHolderId" class="form-control" id="policyHolderId">
+    </div>
+
+    <div class="form-group">
+      <label for="policyHolderName">Policy Holder Name:</label>
+      <input formControlName="policyHolderName" placeholder="Policy Holder Name" name="policyHolderName" class="form-control" id="policyHolderName">
+      
+    </div>
+    <div class="form-group">
+        <label for="policyName">Policy Name:</label>
+        <input formControlName="policyName" placeholder="Policy Name" name="policyName" class="form-control" id="policyName">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="premiumType">Premium type:</label>
+        <input formControlName="premiumType" placeholder="Premium Type" name="premiumType" class="form-control" id="premiumType">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="creditCard">Credit Card:</label>
+        <input formControlName="creditCard" placeholder="Credit Card" name="creditCard" class="form-control" id="creditCard">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input formControlName="dob" placeholder="Date of Birth" name="dob" class="form-control" id="dob">
+        
+      </div>
+
+
+      <div class="form-group">
+        <label for="occupation">Occupation:</label>
+        <input formControlName="occupation" placeholder="Occupation" name="occupation" class="form-control" id="occupation">
+       
+      </div>
+
+      <div class="form-group">
+        <label for="annualIncome">Annual Income:</label>
+        <input formControlName="annualIncome" placeholder="Annual Income" name="annualIncome" class="form-control" id="annualIncome">
+        
+      </div>
+
+      <div class="form-group">
+        <label for="isRetired">Retired (Yes/No):</label>
+        <input formControlName="isRetired" placeholder="Retired (Yes/No)" name="isRetired" class="form-control" id="isRetired">
+        
+      </div>
+
+
+      <div class="form-group">
+        <label for="ssn">SSN:</label>
+        <input formControlName="ssn" placeholder="SSN" name="ssn" class="form-control" id="ssn">
+        
+      </div>
+
+
+    <div class="form-group">
+      <label for="emailId">Email Id:</label>
+      <input type="emailId" formControlName="emailId" placeholder="Email Id" name="emailId" class="form-control" id="emailId">
+      
+    </div>
+
+    <div formGroupName="address">
+    <div class="form-group">
+      <label for="residenceType">Residence Type:</label>
+      <input type="residenceType" formControlName="residenceType" placeholder="Residence Type" name="residenceType" class="form-control" id="residenceType">
+      
+    </div>
+
+    <div class="form-group">
+      <label for="addressLine1">Address Line1:</label>
+      <input type="addressLine1" formControlName="addressLine1" placeholder="Address Line1 " name="addressLine1" class="form-control" id="addressLine1">
+      
+    </div>
+    
+    <div class="form-group">
+      <label for="addressLine2">Address Line2:</label>
+      <input type="addressLine2" formControlName="addressLine2" placeholder="Address Line2 " name="addressLine2" class="form-control" id="addressLine2">
+      
+    </div>
+
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="city" formControlName="city" placeholder="City" name="city" class="form-control" id="city">
+      
+    </div>
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="state" formControlName="state" placeholder="State" name="state" class="form-control" id="state">
+      
+    </div>
+    <div class="form-group">
+      <label for="zip">Zip:</label>
+      <input type="zip" formControlName="zip" placeholder="Zip" name="zip" class="form-control" id="zip">
+      
+    </div>
+
+    <div class="form-group">
+      <label for="residenceUse">Residence Use:</label>
+      <input type="residenceUse" formControlName="residenceUse" placeholder="Residence Use" name="residenceUse" class="form-control" id="residenceUse">
+      
+    </div>
+  </div>
+  <button class="btn btn-success">Update</button>&nbsp; &nbsp;
+  <a class="btn btn-danger" href="policyholder">Cancel</a> 
+  <br/><br/>
+  </form>
+</div>
+

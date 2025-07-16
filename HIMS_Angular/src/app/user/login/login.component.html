@@ -1,0 +1,47 @@
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+    <h3>Login</h3>
+    <br />
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="userName">
+                <h4><b>User Name:</b></h4>
+            </label>
+            <input type="userName" class="form-control" formControlName="userName" id="userName"
+                placeholder="Enter UserName">
+            <div *ngIf="submitted && loginForm.controls.userName.errors" class="error">
+                <div class="text-danger" *ngIf="loginForm.controls.userName.errors.required">User Name is required</div>
+            </div>
+
+        </div>
+        <div class="form-group">
+            <label for="password">
+                <h4><b>Password:</b></h4>
+            </label>
+            <input type="password" class="form-control" formControlName="password" id="password"
+                placeholder="Enter Password">
+            <div *ngIf="submitted && loginForm.controls.password.errors" class="error">
+                <div class="text-danger" *ngIf="loginForm.controls.password.errors.required">Password is required</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="role">
+                <h4><b>Role:</b></h4>
+            </label>
+            <br>
+            <input type="radio" formControlName="role"  id="admin" value="admin"/>  Admin <br>
+            
+            <input type="radio" formControlName="role"  id="Agent" value="Agent" />  Agent <br>
+            
+            <input type="radio" formControlName="role"  id="Policyholder" value="Policyholder"/>  Policy holder <br>
+            
+        </div>
+
+        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<button class="btn btn-success"><b>Login</b></button> &nbsp; &nbsp;&nbsp;
+        &nbsp;
+        <button class="btn btn-danger" type="reset"><b>Cancel</b></button>
+        <br /><br />
+        <p><b>New User?</b> &nbsp;<a class="btn btn-success" (click)="addUser()"><b>Sign In</b></a></p>
+        <span class="psw">Forgot <a href="http://localhost:4200/forgot-password">password?</a></span>
+    </form>
+</div>

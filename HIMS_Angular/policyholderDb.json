@@ -1,0 +1,25 @@
+{
+  "policyholder": [
+    {
+      "id": 1,
+      "policyHolderId": "1",
+      "policyHolderName": "Srihitha",
+      "policyName": "home",
+      "premiumType": "Standard",
+      "creditCard": "123455",
+      "dob": "12-09-1990",
+      "occupation": "private",
+      "annualIncome": "500000",
+      "isRetired": "Yes",
+      "ssn": "111",
+      "emailId": "srihithatsr@gmail.com",
+      "residenceType": "Own",
+      "addressLine1": "408,EDEN-A,LODHA,CASAPARADISO",
+      "addressLine2": "SANATH NAGAR",
+      "city": "HYDERABAD",
+      "state": "Telangana",
+      "zip": "500018",
+      "residenceUse": "General"
+    }
+  ]
+}

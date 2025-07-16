@@ -1,0 +1,43 @@
+<br /><br />
+<div class="col-md-6 col-md-offset-2">
+    <h2>My Policy &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </h2>
+    <br />
+    <form [formGroup]="policyForm">
+
+        <div class="form-group">
+            <label for="policyId">Policy Id:</label>
+            <input formControlName="policyId" placeholder="policyId" name="policyId" class="form-control" id="policyId">
+        </div>
+
+        <div class="form-group">
+            <label for="policyEffectiveDate">Policy date:</label>
+            <input formControlName="policyEffectiveDate" placeholder="policyEffectiveDate" name="policyEffectiveDate"
+                class="form-control" id="policyEffectiveDate">
+        </div>
+
+        <div class="form-group">
+            <label for="policyEndDate">Policy_enddate:</label>
+            <input formControlName="policyEndDate" placeholder="policyEndDate" name="policyEnddate" class="form-control"
+                id="policyEndDate">
+        </div>
+
+        <div class="form-group">
+            <label for="policyTerm">Policy_term:</label>
+            <input formControlName="policyTerm" placeholder="policyTerm" name="policyTerm" class="form-control"
+                id="policyTerm">
+        </div>
+
+        <div class="form-group">
+            <label for="policyStatus">Policy_status:</label>
+            <input formControlName="policyStatus" placeholder="policyStatus" name="policyStatus" class="form-control"
+                id="policyStatus">
+        </div>
+       
+        <a class="btn btn-info" href="quote">Quote</a>&nbsp;&nbsp;
+        
+        <a class="btn btn-danger" href="policyholder">Cancel</a> 
+        
+        <br /><br />
+    </form>
+</div>
